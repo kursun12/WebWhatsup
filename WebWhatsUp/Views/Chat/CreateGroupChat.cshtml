@@ -1,0 +1,26 @@
+﻿
+@model WebWhatsUp.Models.Groups
+@{
+    ViewBag.Title = "Create GroupChat";
+}
+
+<h2>Create a new Group</h2>
+<br />
+<p>The Groupkey is the key which you share to other users, so they can join your group!</p>
+<br />
+
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(i => i.GroupName)
+    @Html.TextBoxFor(i => i.GroupName)
+    @Html.ValidationMessageFor(i => i.GroupName)
+    <br />
+    <br />
+    @Html.LabelFor(i => i.GroupKey)
+    @Html.TextBoxFor(i => i.GroupKey)
+    @Html.ValidationMessageFor(i => i.GroupKey)
+    <br />
+    <br />
+    <input type="submit" value="Create Group" />
+}

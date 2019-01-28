@@ -1,0 +1,23 @@
+﻿@model WebWhatsUp.Models.ChatMessages
+@{
+
+}
+
+<h2>Sending a message to @ViewBag.Title</h2>
+@Html.ValidationSummary()
+
+@using (Html.BeginForm("SendMessage", "Contacts", FormMethod.Post))
+{
+    @Html.LabelFor(i => i.Message)
+    @Html.TextBoxFor(i => i.Message) <input type="submit" value="send" />
+    @Html.ValidationMessageFor(i => i.Message)
+    @Html.HiddenFor(i => i.Time)
+    @Html.HiddenFor(i => i.SenderEmail)
+    @Html.HiddenFor(i => i.ReceiverEmail)
+    <br />
+    <br />
+    <div>
+        @Html.ActionLink("Return to contacts", "Index")
+    </div>
+}
+

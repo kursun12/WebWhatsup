@@ -1,0 +1,26 @@
+﻿@model WebWhatsUp.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@Html.ValidationSummary()
+
+@using (Html.BeginForm())
+{
+
+    @Html.LabelFor(i => i.Email)
+    @Html.TextBoxFor(i => i.Email)
+    @Html.ValidationMessageFor(i => i.Email)
+    <br />
+    <br />
+    @Html.LabelFor(i => i.Password)
+    @Html.PasswordFor(i => i.Password)
+    @Html.ValidationMessageFor(i => i.Password)
+    <br />
+    <br />
+    <Input Type="submit" value="Log in" />
+
+}
+
+

@@ -1,0 +1,26 @@
+﻿@model WebWhatsUp.Models.Contacts
+@{
+    ViewBag.Title = "Delete Contact";
+}
+
+<h2>Delete Contact</h2>
+@using (Html.BeginForm())
+{
+
+    @Html.LabelFor(i => i.Name)
+    <p>@Model.Name</p>
+    @Html.HiddenFor(i => i.Name)
+    <br />
+    @Html.LabelFor(i => i.Email)
+    <p>@Model.Email</p>
+    @Html.HiddenFor(i => i.Email)
+    <br />
+
+    <input type="submit" value="Delete" />
+    <br/>
+    <br/>
+    <div>
+        @Html.ActionLink("Return to contacts", "Index")
+    </div>
+}
+

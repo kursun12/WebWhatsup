@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebWhatsUp.Models.Contacts>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Jouw contacten</h2>
+
+<h4>@Html.ActionLink("Add new contact", "AddContact")</h4>
+
+<div>
+
+    <ol>
+
+        @foreach (var item in Model)
+        {
+            <li>Naam: @item.Name <br />E-mail: @item.Email - @Html.ActionLink("Edit", "EditContact", new { id = item.Id }) - @Html.ActionLink("Delete", "DeleteContact", new { id = item.Id }) - @Html.ActionLink("new Message", "SendMessage", new { id = item.Id }) </li>
+        }
+
+    </ol>
+
+</div>
+

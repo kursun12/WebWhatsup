@@ -1,0 +1,28 @@
+﻿@model WebWhatsUp.Models.RegisterModel
+
+<h2>Register</h2>
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(i => i.Name)
+    @Html.TextBoxFor(i => i.Name)
+    @Html.ValidationMessageFor(i => i.Name)
+    <br />
+    @Html.LabelFor(i => i.Email)
+    @Html.TextBoxFor(i => i.Email)
+    @Html.ValidationMessageFor(i => i.Email)
+
+    <br />
+    @Html.LabelFor(i => i.Password)
+    @Html.PasswordFor(i => i.Password)
+    @Html.ValidationMessageFor(i => i.Password)
+
+    <br />
+    @Html.LabelFor(i => i.ConfirmPassword)
+    @Html.PasswordFor(i => i.ConfirmPassword)
+    @Html.ValidationMessageFor(i => i.ConfirmPassword)
+    <br />
+
+    <input type="submit" value="Create account" />
+}
+

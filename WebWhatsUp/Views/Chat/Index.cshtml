@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebWhatsUp.Models.ChatMessages>
+@{
+   ViewBag.Title = "Index";
+}
+
+<h2>Chatoverzicht</h2>
+
+<h4>@Html.ActionLink("My Groupchats", "GroupChat")</h4>
+
+<div>
+
+    <ol>
+
+        @foreach (var item in Model)
+        {
+            <li>@item.Time <br /> @item.Message -<br /> naar: @item.ReceiverEmail - van @item.SenderEmail</li>
+        }
+
+    </ol>
+
+</div>
+

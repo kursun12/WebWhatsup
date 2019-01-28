@@ -1,0 +1,4 @@
+\\SALIIH-PC\Users\Saliih\source\repos\WebWhatsUp-Salih Kara(562864)2\WebWhatsUp.Tests\obj\Debug\WebWhatsUp.Tests.csprojAssemblyReference.cache
+\\SALIIH-PC\Users\Saliih\source\repos\WebWhatsUp-Salih Kara(562864)2\WebWhatsUp.Tests\obj\Debug\WebWhatsUp.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Saliih\source\repos\WebWhatsUp-Salih Kara(562864)2\WebWhatsUp.Tests\obj\Debug\WebWhatsUp.Tests.csprojAssemblyReference.cache
+C:\Users\Saliih\source\repos\WebWhatsUp-Salih Kara(562864)2\WebWhatsUp.Tests\obj\Debug\WebWhatsUp.Tests.csproj.CoreCompileInputs.cache
